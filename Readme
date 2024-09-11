@@ -1,0 +1,21 @@
+Face-Swap Detection Tool
+
+
+* Objective: Develop a method to detect deep fake videos using Convolutional Neural Networks (CNN) and Recurrent Neural Networks (RNN).
+* Methodology:
+    * Extract frame-level features with ResNext CNN.
+    * Classify videos using LSTM to identify temporal inconsistencies.
+* Dataset: Mixed dataset with 50% real and 50% deep fake videos.
+* Conclusion: The proposed system aims for high accuracy in real-time deep fake detection, though it currently does not address audio deep fakes.
+
+Limitations:
+
+1. Audio Detection: The method does not account for audio, making it unable to detect audio deep fakes.
+2. Dependence on Visual Cues: It primarily relies on visual features, such as eye blinking and facial artifacts, which may not be sufficient for comprehensive detection.
+3. Potential for Real-Time Data Issues: The model may face challenges when applied to real-time data due to noise and variations not present in the training dataset.
+
+
+Proposed Workaround:
+
+1. Audio Detection: Using  speech to text api for translation and contextually checking the words spoken In the suspected deep fake video. Using APIs: 
+Accurate Speech to Text (AWS) or Deepgram(Best)& for context 
