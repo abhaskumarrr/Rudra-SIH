@@ -18,4 +18,6 @@ Limitations:
 Proposed Workaround:
 
 1. Audio Detection: Using  speech to text api for translation and contextually checking the words spoken In the suspected deep fake video. Using APIs: 
-Accurate Speech to Text (AWS) or Deepgram(Best)& for context 
+Accurate Speech to Text (AWS) or Deepgram(Best)& for context we can use 1.	Contextual Language Models APIs (e.g., GPT-3, GPT-4 APIs): These models can analyze text for context
+ and generate coherent responses based on the input. You can send text data to these APIs, and they can help check if the text makes sense in a given context 
+ or provide recommendations.
